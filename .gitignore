@@ -1,0 +1,9 @@
+
+.gitignore
+.idea/encodings.xml
+.idea/kiwi_currency_converter.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/workspace.xml
+README.md
+venv/
