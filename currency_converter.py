@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # Author: Jakub Kubik
-# Date: 09.03.2019
+# Date: 10.03.2019
 
 from entry_task.arguments import parse_arguments, check_currency_args_validity, adjust_from_to_currency
 from entry_task.download import download_exchange_rates
@@ -26,6 +26,6 @@ if __name__ == '__main__':
     converted_currency = convert(amount, currency_from, currency_to, exchange_rates)
 
     print(
-        dumps({'input': {'amount': str(amount), 'currency': currency_from},
+        dumps({'input': {'amount': amount, 'currency': currency_from},
                'output': converted_currency},
               indent=4))

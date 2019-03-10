@@ -41,5 +41,5 @@ def currency_converter():
 
     converted_currency = convert(amount, currency_from, currency_to, exchange_rates)
 
-    return jsonify({'input': {'amount': str(amount), 'currency_from': currency_from},
+    return jsonify({'input': {'amount': amount, 'currency_from': currency_from},
                     'output': converted_currency})
