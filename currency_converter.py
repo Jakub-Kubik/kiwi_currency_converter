@@ -2,9 +2,9 @@
 # Author: Jakub Kubik
 # Date: 10.03.2019
 
-from entry_task.arguments import parse_arguments, check_currency_args_validity, adjust_from_to_currency
-from entry_task.download import download_exchange_rates
-from entry_task.conversion import convert
+from entry_task_package.arguments import parse_arguments, check_currency_args_validity, adjust_from_to_currency
+from entry_task_package.download import download_exchange_rates
+from entry_task_package.conversion import convert
 from sys import exit, stderr
 from json import dumps
 
