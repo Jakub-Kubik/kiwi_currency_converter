@@ -50,11 +50,11 @@ CLI application uses ```entry_task_package``` and python standard library.
 ```
 
 ## Web API application
-Web API application is created in Fask. App uses functions from ```entry_task_package```
+Web API application is created in Fask. App uses functions from ```entry_task_package```.
 
 ### localhost
 Application runs on port 5000. If you want to change server to be accessible on local network, you 
-must change ip of server to 0.0.0.0
+must change IP address of server to 0.0.0.0.
 
 #### Run application
 ```
@@ -101,7 +101,7 @@ http://localhost:5000/currency_converter?amount=10.92&input_currency=£
 
 
 ### Deployed application
-Application is deployed on pythonanywhere.com with address ```https://xkubik32.pythonanywhere.com/```
+Application is deployed on pythonanywhere.com with address ```https://xkubik32.pythonanywhere.com/```.
 
 
 ### Examples
