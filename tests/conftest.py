@@ -3,7 +3,8 @@
 # Date: 11.03.2019
 
 import pytest
-from web_api_app import create_app
+import sys
+from api.web_api_app import create_app
 
 
 @pytest.fixture

@@ -5,9 +5,9 @@
 import pytest
 # CLI
 import sys  # 1
-from entry_task_package.arguments import parse_arguments
-from entry_task_package.arguments import adjust_from_to_currency  # 2
-from entry_task_package.conversion import convert  # 3
+from shared.arguments import parse_arguments
+from shared.arguments import adjust_from_to_currency  # 2
+from shared.conversion import convert  # 3
 
 
 # ===================================================

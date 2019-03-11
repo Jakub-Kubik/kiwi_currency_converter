@@ -4,9 +4,9 @@
 
 from flask import Flask, request, jsonify, render_template
 from argparse import Namespace
-from entry_task_package.arguments import check_currency_args_validity, adjust_from_to_currency
-from entry_task_package.download import download_exchange_rates
-from entry_task_package.conversion import convert
+from shared.arguments import check_currency_args_validity, adjust_from_to_currency
+from shared.download import download_exchange_rates
+from shared.conversion import convert
 
 GET_PARAM_ERR = 1
 
