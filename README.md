@@ -1,13 +1,13 @@
 # Currency converter
 Currency converter is CLI and web API application. The goal of project is to create 
 application for currency conversion based on everyday coins exchange rates. Source of 
-live data is European Central Bank with address ```https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml```.
+live data is European Central Bank with address: ```https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml```.
 
 ## Getting Started
-You need to create virtual environment for python 3.7, clone this repository
+You need to clone this repository, create virtual environment for python 3.7 and activate it
 and install all required packages from ```requirements.txt```.
 
-## Parameters
+## API and CLI app parameters
 - `amount` - amount which we want to convert - float
 - `input_currency` - input currency - 3 letters name or currency symbol
 - `output_currency` - requested/output currency - 3 letters name or currency symbol
@@ -16,11 +16,11 @@ and install all required packages from ```requirements.txt```.
 - if output_currency param is missing, convert to all known currencies
 
 ## CLI application
-CLI application uses ```entry_task_package``` and python standard library.
+CLI application uses ```functions``` and python standard library.
 
-### Run CLI application
+### Run CLI app
 ```
-<python3> ./currency_converter.py <parameters>
+(venv) <python3> ./currency_converter.py <parameters>
 ```
 
 ### Examples 
@@ -50,15 +50,15 @@ CLI application uses ```entry_task_package``` and python standard library.
 ```
 
 ## Web API application
-Web API application is created in Fask. App uses functions from ```entry_task_package```.
+Web API application is created in Flask and uses ```functions```.
 
 ### localhost
 Application runs on port 5000. If you want to change server to be accessible on local network, you 
 must change IP address of server to 0.0.0.0.
 
-#### Run application
+#### Run API application
 ```
-export FLASK_APP=web_api_app.py
+export FLASK_APP=api/web_api_app.py
 flask run
 ```
 
@@ -142,14 +142,13 @@ https://xkubik32.pythonanywhere.com/currency_converter?amount=10.92&input_curren
 ```
 
 ## Tests
-
 Tests are for CLI and for web API application. They are written in pytest and
-pytest-flask. Run them with command:
+pytest-flask.
 
+### Run tests
 ```
-pytest ./tests/tests.py
+pytest ./tests/tests.py -v
 ```
 
 ## Author
-
 Jakub Kubík (jakupkubik@gmail.com)
