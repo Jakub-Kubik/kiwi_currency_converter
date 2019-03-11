@@ -1,7 +1,7 @@
 # Currency converter
 Currency converter is CLI and web API application. The goal of project is to create 
 application for currency conversion based on everyday coins exchange rates. Source of 
-live data is European Central Bank with address: ```https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml```.
+live data is European Central Bank (ECB) with address: ```https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml```.
 
 ## Getting Started
 You need to clone this repository, create virtual environment for python 3.7 and activate it
@@ -11,6 +11,15 @@ and install all required packages from ```requirements.txt```.
 - `amount` - amount which we want to convert - float
 - `input_currency` - input currency - 3 letters name or currency symbol
 - `output_currency` - requested/output currency - 3 letters name or currency symbol
+
+## CLI app return codes
+- `0` - no error
+- `2` - program parameters error
+- `3` - downloading currency rates from ECB error 
+
+# API app GET method response codes
+- `200` - no error
+- `404` - web page unreachable or GET method parameters error
 
 ## Functionality
 - if output_currency param is missing, convert to all known currencies
