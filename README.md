@@ -12,6 +12,9 @@ and install all required packages from ```requirements.txt```.
 - `input_currency` - input currency - 3 letters name or currency symbol
 - `output_currency` - requested/output currency - 3 letters name or currency symbol
 
+## Functionality
+- if output_currency param is missing, convert to all known currencies
+
 ## CLI app return codes
 - `0` - no error
 - `2` - program parameters error
@@ -20,9 +23,6 @@ and install all required packages from ```requirements.txt```.
 ## API app GET method response codes
 - `200` - no error
 - `404` - web page unreachable or GET method parameters error
-
-## Functionality
-- if output_currency param is missing, convert to all known currencies
 
 ## CLI application
 CLI application uses ```functions``` and python standard library.
