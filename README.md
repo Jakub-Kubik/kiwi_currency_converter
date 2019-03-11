@@ -15,21 +15,17 @@ and install all required packages from ```requirements.txt```.
 ## Functionality
 - if output_currency param is missing, convert to all known currencies
 
-## CLI app return codes
+## CLI application
+CLI application uses ```functions``` and python standard library.
+
+### CLI app return codes
 - `0` - no error
 - `2` - program parameters error
 - `3` - downloading currency rates from ECB error 
 
-## API app GET method response codes
-- `200` - no error
-- `404` - web page unreachable or GET method parameters error
-
-## CLI application
-CLI application uses ```functions``` and python standard library.
-
-### Run CLI app
+### Run
 ```
-(venv) <python3> ./currency_converter.py <parameters>
+<python3> ./currency_converter.py <parameters>
 ```
 
 ### Examples 
@@ -61,17 +57,21 @@ CLI application uses ```functions``` and python standard library.
 ## Web API application
 Web API application is created in Flask and uses ```functions```.
 
+### API app GET method response codes
+- `200` - no error
+- `404` - web page unreachable or GET method parameters error
+
 ### localhost
 Application runs on port 5000. If you want to change server to be accessible on local network, you 
 must change IP address of server to 0.0.0.0.
 
-#### Run API application
+#### Run
 ```
 export FLASK_APP=api/web_api_app.py
 flask run
 ```
 
-### Examples
+#### Examples
 ```
 http://localhost:5000/currency_converter?amount=0.9&input_currency=¥&output_currency=AUD
 "input": {
@@ -109,11 +109,11 @@ http://localhost:5000/currency_converter?amount=10.92&input_currency=£
 ```
 
 
-### Deployed application
+### Deployed API application
 Application is deployed on pythonanywhere.com with address ```https://xkubik32.pythonanywhere.com/```.
 
 
-### Examples
+#### Examples
 ```
 https://xkubik32.pythonanywhere.com/currency_converter?amount=0.9&input_currency=¥&output_currency=AUD
 "input": {
