@@ -17,7 +17,7 @@ and install all required packages from ```requirements.txt```.
 - `2` - program parameters error
 - `3` - downloading currency rates from ECB error 
 
-# API app GET method response codes
+## API app GET method response codes
 - `200` - no error
 - `404` - web page unreachable or GET method parameters error
 
