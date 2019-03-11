@@ -1,5 +1,4 @@
-
-.idea/
-venv/
-__pycache__/
-entry_task/__pycache__/
+.idea/*
+venv/*
+__pycache__/*
+entry_task_package/__pycache__/*
