@@ -5,9 +5,9 @@
 import pytest
 # CLI
 import sys  # 1
-from shared.arguments import parse_arguments
-from shared.arguments import adjust_from_to_currency  # 2
-from shared.conversion import convert  # 3
+from functions.arguments import parse_arguments
+from functions.arguments import adjust_from_to_currency  # 2
+from functions.conversion import convert  # 3
 
 
 # ===================================================

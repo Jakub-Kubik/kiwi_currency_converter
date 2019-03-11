@@ -2,9 +2,9 @@
 # Author: Jakub Kubik
 # Date: 10.03.2019
 
-from shared.arguments import parse_arguments, check_currency_args_validity, adjust_from_to_currency
-from shared.download import download_exchange_rates
-from shared.conversion import convert
+from functions.arguments import parse_arguments, check_currency_args_validity, adjust_from_to_currency
+from functions.download import download_exchange_rates
+from functions.conversion import convert
 from sys import exit, stderr
 from json import dumps
 
